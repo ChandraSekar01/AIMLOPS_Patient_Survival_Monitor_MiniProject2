@@ -1,0 +1,11 @@
+uvicorn>=0.16.0,<0.18.0
+fastapi>=0.64.0,<1.0.0
+requests>=2.23.0,<2.24.0
+scikit-learn==1.6.1
+pydantic
+pydantic-settings
+joblib==1.4.2
+xgboost==2.1.4
+numpy
+pandas
+prometheus-client

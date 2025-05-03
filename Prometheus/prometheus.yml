@@ -1,0 +1,23 @@
+# my global config
+global:
+  scrape_interval: 20s 
+  evaluation_interval: 20s 
+
+scrape_configs:
+# The job name is added as a label `job=<job_name>` to any timeseries
+# scraped from this config.
+  # - job_name: "prometheus"
+  #   metrics_path: '/metrics'
+  #   scheme: 'https'
+  #   scrape_interval: 10s # override default value
+  #   scrape_timeout: 10s # override default value
+  #   static_configs:
+  #   - targets: ["bookish-meme-v7r6r5rxp5whxvg9-9090.app.github.dev"] # The target here it's Prometheus itself.
+
+  - job_name: "patient-survival-app"
+    metrics_path: '/metrics'
+    scheme: 'https'
+    scrape_interval: 10s # override default value
+    scrape_timeout: 10s # override default value
+    static_configs:
+    - targets: ["bookish-meme-v7r6r5rxp5whxvg9-8002.app.github.dev"] # The target here is patient survival api.
